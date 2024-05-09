@@ -1,0 +1,137 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>340</x><y>690</y><w>210</w><h>80</h></coordinates><panel_attributes>Good
+--
+good_name: string
+good_price: int
+good_color: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>240</y><w>210</w><h>110</h></coordinates><panel_attributes>City
+--
+city_name: string
+city_roman_char: string
+city_sester_price: int
+city_coordinates: SDO_Point(x,y,z)
+city_is_capital: boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>130</y><w>210</w><h>90</h></coordinates><panel_attributes>Map
+--
+map_name: string
+map_min_players: int
+map_max_players: int
+map_coordinates: SDO_Point(x,y,z)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>150</y><w>110</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=map_capital
+r1=1</panel_attributes><additional_attributes>90;100;30;100;30;10;90;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1190</x><y>130</y><w>230</w><h>80</h></coordinates><panel_attributes>Province
+--
+province_name: string
+province_coordinates: SDO_Point(x,y,z)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>140</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=map_coll_provinces
+r1=*</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>200</y><w>300</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+m1=province_coll_citys
+r1=*</panel_attributes><additional_attributes>10;50;280;50;280;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>430</y><w>210</w><h>70</h></coordinates><panel_attributes>Way
+--
+way_name: string
+way_color: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>180</y><w>210</w><h>60</h></coordinates><panel_attributes>Line
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>230</y><w>250</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=line_city_1, line_city_2
+r1=2</panel_attributes><additional_attributes>230;110;10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>180</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=-&gt;
+m2=map_coll_line
+r2=*</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1150</x><y>1250</y><w>210</w><h>70</h></coordinates><panel_attributes>Tribune
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>1070</y><w>210</w><h>70</h></coordinates><panel_attributes>Architect
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1090</x><y>1070</y><w>210</w><h>70</h></coordinates><panel_attributes>Prefect
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>1160</y><w>210</w><h>70</h></coordinates><panel_attributes>Colonist
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>1160</y><w>210</w><h>70</h></coordinates><panel_attributes>Mercator
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1120</x><y>1160</y><w>210</w><h>70</h></coordinates><panel_attributes>Diplomat
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>1250</y><w>210</w><h>70</h></coordinates><panel_attributes>Senator
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>1250</y><w>210</w><h>70</h></coordinates><panel_attributes>Consul
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>1070</y><w>210</w><h>70</h></coordinates><panel_attributes>Specialist
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>1340</y><w>210</w><h>70</h></coordinates><panel_attributes>Concordia
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>1340</y><w>210</w><h>70</h></coordinates><panel_attributes>Praefectus Magnus
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>850</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+Card
+--
+card_name : string
+card_description: string
+card_example: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>690</y><w>210</w><h>80</h></coordinates><panel_attributes>Player
+--
+player_wallet: int
+player_color: string
+player_score: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>710</y><w>290</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=player_goods
+r1=*</panel_attributes><additional_attributes>10;20;270;20</additional_attributes></element><element><id>Relation</id><coordinates><x>970</x><y>760</y><w>150</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=player_playable_cards
+r1=*</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>550</y><w>210</w><h>70</h></coordinates><panel_attributes>Colonist
+--
+colonist.color: string
+colonist_type: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>610</y><w>120</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=player_colonists
+r1=6</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>230</y><w>80</w><h>220</h></coordinates><panel_attributes>lt=&lt;-
+m1=line_way
+r1=1</panel_attributes><additional_attributes>10;200;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>280</y><w>480</w><h>430</h></coordinates><panel_attributes>lt=&lt;-
+m1=city_goods_cost
+r1=*</panel_attributes><additional_attributes>10;410;10;10;460;10</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>310</y><w>380</w><h>400</h></coordinates><panel_attributes>lt=&lt;-
+m1=city_good_produce
+r1=1</panel_attributes><additional_attributes>10;380;10;10;360;10</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>760</y><w>480</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=card_goods_cost
+r1=*</panel_attributes><additional_attributes>10;10;10;120;460;120</additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>320</y><w>130</w><h>290</h></coordinates><panel_attributes>lt=-&gt;
+m2=city_colonist
+r2=*</panel_attributes><additional_attributes>10;10;110;10;110;260;10;260</additional_attributes></element><element><id>Relation</id><coordinates><x>910</x><y>950</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>430</y><w>200</w><h>310</h></coordinates><panel_attributes>lt=-&gt;
+m2=house_player
+r2=1</panel_attributes><additional_attributes>180;10;140;280;10;280</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>760</y><w>190</w><h>360</h></coordinates><panel_attributes>lt=&lt;-
+m1=card_good_produce
+r1=1</panel_attributes><additional_attributes>70;10;10;100;10;340;120;340</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>950</y><w>140</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>930</y><w>130</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;110;10;110;140</additional_attributes></element><element><id>Relation</id><coordinates><x>760</x><y>950</y><w>70</w><h>450</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>50;10;50;60;10;60;10;430;50;430</additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>950</y><w>60</w><h>360</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;10;40;340;10;340</additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>900</y><w>350</w><h>370</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;330;10;330;350</additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>920</y><w>330</w><h>260</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;310;10;310;240</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>890</y><w>390</w><h>470</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>370;10;10;10;10;450</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>910</y><w>370</w><h>360</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>350;10;10;10;10;340</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>930</y><w>350</w><h>250</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>330;10;10;10;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>950</y><w>70</w><h>250</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>50;10;50;90;10;90;10;230;30;230</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1190</x><y>700</y><w>210</w><h>70</h></coordinates><panel_attributes>IA
+--
+ia_name</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>740</y><w>200</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>760</y><w>140</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=player_played_cards
+r1=*</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>70</y><w>210</w><h>70</h></coordinates><panel_attributes>Game
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>90</y><w>150</w><h>650</h></coordinates><panel_attributes>lt=&lt;-
+m1=game_goods
+r1=*</panel_attributes><additional_attributes>100;620;50;620;50;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>80</y><w>350</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=game_map
+r1=1</panel_attributes><additional_attributes>270;50;270;30;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>70</y><w>930</w><h>640</h></coordinates><panel_attributes>lt=&lt;-
+m1=game_players
+r1=*</panel_attributes><additional_attributes>430;620;430;600;910;600;910;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>260</y><w>210</w><h>70</h></coordinates><panel_attributes>Bonus Token
+--
+bonus_sesters: int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>320</y><w>270</w><h>460</h></coordinates><panel_attributes>lt=&lt;-
+m1=target_good
+r1=1</panel_attributes><additional_attributes>250;430;10;430;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>0</y><w>1270</w><h>280</h></coordinates><panel_attributes>lt=&lt;-
+m1=target_province
+r1=1</panel_attributes><additional_attributes>1160;130;1160;10;10;10;10;260</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>230</y><w>430</w><h>340</h></coordinates><panel_attributes>lt=&lt;-
+m1=line_colonist
+r1=1</panel_attributes><additional_attributes>340;320;340;170;10;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1390</x><y>850</y><w>160</w><h>110</h></coordinates><panel_attributes>God
+--
+god_name: string
+god_description: string
+god_example: string
+god_reward: string
+god_victory_points: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>870</y><w>400</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=card_god
+r1=1</panel_attributes><additional_attributes>380;70;350;70;350;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1200</x><y>790</y><w>160</w><h>60</h></coordinates><panel_attributes>Numeral
+--
+numeral_arabic: int
+numeral_roman: str</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>820</y><w>210</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+m1=card_for_sale_deck
+r1=*</panel_attributes><additional_attributes>190;20;10;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>820</y><w>230</w><h>80</h></coordinates><panel_attributes>DisplayArea
+--
+display_area_any_good_required: str
+display_area_n_goods: int
+display_area_position: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>760</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=display_area_good
+r1=0..1</panel_attributes><additional_attributes>130;10;90;40;90;100;70;100</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>100</y><w>270</w><h>740</h></coordinates><panel_attributes>lt=-&gt;
+m2=game_display_area
+r2=1</panel_attributes><additional_attributes>250;10;100;10;100;470;10;610;10;720</additional_attributes></element><element><id>Relation</id><coordinates><x>1350</x><y>200</y><w>170</w><h>650</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+r1=province_roman_num</panel_attributes><additional_attributes>10;620;80;620;60;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1160</x><y>380</y><w>210</w><h>60</h></coordinates><panel_attributes>House
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1000</x><y>270</y><w>200</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=house_city
+r1=1</panel_attributes><additional_attributes>10;20;180;20;180;110</additional_attributes></element><element><id>Relation</id><coordinates><x>1008</x><y>185</y><w>330</w><h>210</h></coordinates><panel_attributes>lt=&lt;-
+m1=all_house
+r1=*</panel_attributes><additional_attributes>260;190;260;50;10;10</additional_attributes></element></diagram>

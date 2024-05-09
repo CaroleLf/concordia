@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>441</x>
+      <y>196</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>_:Joueur_
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>182</x>
+      <y>196</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>_:Jeu_
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>210</y>
+      <w>21</w>
+      <h>455</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;630.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>469</x>
+      <y>210</y>
+      <w>21</w>
+      <h>455</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;630.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>238</y>
+      <w>280</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Lancer le jeu
+</panel_attributes>
+    <additional_attributes>10.0;20.0;380.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>49</x>
+      <y>280</y>
+      <w>182</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Distribution des jetons cités
+</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>42</x>
+      <y>196</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>_:Plateau_
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>49</x>
+      <y>210</y>
+      <w>21</w>
+      <h>455</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;630.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>49</x>
+      <y>308</y>
+      <w>182</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Retournement des jetons cités
+</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>49</x>
+      <y>336</y>
+      <w>182</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Attribution des marqueurs bonus
+</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>42</x>
+      <y>357</y>
+      <w>203</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Tri des cartes à vendre par numéro Romain
+</panel_attributes>
+    <additional_attributes>20.0;20.0;250.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>49</x>
+      <y>378</y>
+      <w>182</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Suppression des cartes suivant joueurs
+</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>49</x>
+      <y>399</y>
+      <w>182</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Affichage des 7 cartes du dessus
+</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>420</y>
+      <w>280</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Mise du reste des cartes avec la carte concordia (sur le côté)
+</panel_attributes>
+    <additional_attributes>80.0;20.0;310.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>49</x>
+      <y>462</y>
+      <w>182</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Affiche les colons de départ à Roma
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>49</x>
+      <y>497</y>
+      <w>182</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Place et affiche les jetons score
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>511</y>
+      <w>280</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Place les 4 colons restants dans entrepot
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;380.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>532</y>
+      <w>280</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Place les 6 ressources de départ dans entrepot
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;380.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>49</x>
+      <y>546</y>
+      <w>182</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Affiche les entrepot mis à jour
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>567</y>
+      <w>280</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Donne les 7 cartes de départ au joueur
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;380.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>588</y>
+      <w>280</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Distribution de l'argent de départ
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;380.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>203</x>
+      <y>609</y>
+      <w>294</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Attribution de la carte PRAEFECTUS MAGNUS au dernier joueur
+
+</panel_attributes>
+    <additional_attributes>20.0;20.0;390.0;20.0</additional_attributes>
+  </element>
+</diagram>

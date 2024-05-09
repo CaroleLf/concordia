@@ -1,0 +1,16 @@
+stages:
+    - test
+    - linting
+
+unit-test:
+    stage: test
+    image: python:3.11
+    script:
+        - pip install -r requirements.txt
+        - python -m unittest discover -s CONCORDIA/TEST -t CONCORDIA/TEST
+
+flake8:
+    stage: linting
+    image: registry.gitlab.com/pipeline-components/flake8:latest
+    script:
+        - flake8 --max-line-length=120 --verbose .

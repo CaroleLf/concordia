@@ -1,0 +1,2 @@
+*.dll filter=lfs diff=lfs merge=lfs -text
+CONCORDIA/DAL/instantclient_21_11/oraociei.dll filter=lfs diff=lfs merge=lfs -text
